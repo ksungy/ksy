@@ -1,0 +1,196 @@
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #e1e2e1;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-purple: #8c52ff;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #0288d1;
+  --color-dark-blue: #005b9f;
+  --color-light-blue: #5eb8ff;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+  --color-green: #00695c;
+  --color-dark-green: #002232;
+  --color-light-green: #4e7589;
+  --color-bg-green: #20495c;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Annimation */
+  --animation-duration: 300ms;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+body {
+  font-family: "Gugi", cursive;
+  position: relative;
+  overflow: hidden;
+  background: url(/Semi_Project_QTMarket/resources/imgs/backgorund/background2.png) center/cover no-repeat;
+}
+
+/* Section common */
+.section {
+  position: relative;
+  padding: 90px;
+  text-align: center;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(252, 252, 136, 0.6);
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  font-size: var(--font-medium);
+}
+
+.navbar__logo {
+  display: flex;
+}
+
+.navbar__logo > img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.navbar__logo > a {
+  background: rgb(255, 87, 87);
+  background: linear-gradient(90deg, rgba(255, 87, 87, 1) 16%, rgba(140, 82, 255, 1) 89%);
+  background-size: 100% 100%;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 10px;
+}
+
+.navbar__menu__item > a {
+  transition: all var(--animation-duration) ease;
+}
+
+.navbar__menu__item > a.active {
+  color: var(--color-purple);
+}
+
+.navbar__menu__item > a:hover {
+  cursor: pointer;
+  color: var(--color-dark-pink);
+}
+
+/* Home */
+#home {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.home {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.home__logo__image {
+  display: flex;
+  width: 500px;
+  height: 500px;
+}
+
+.home__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--color-purple);
+  font-size: 80px;
+}
+
+.text {
+  color: var(--color-pink);
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  font-size: var(--font-regular);
+  width: 100%;
+}
+
+#footer a,
+#footer p {
+  color: var(--color-grey);
+  transition: all var(--animation-duration) ease-in;
+}
+
+#footer a:hover {
+  color: var(--color-dark-pink);
+}
